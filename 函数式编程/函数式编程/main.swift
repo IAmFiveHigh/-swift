@@ -8,5 +8,38 @@
 
 import Foundation
 
-print("Hello, World!")
+typealias Distance = Double
+
+struct Position {
+    var x: Double
+    var y: Double
+    
+}
+
+extension Position {
+    func inRange(_ range: Distance) -> Bool {
+        return sqrt(x * x + y * y) <= range
+    }
+}
+
+struct Ship {
+    
+    var position: Position
+    var firingRange: Distance
+    var unsafeRange: Distance
+}
+
+extension Ship {
+    func canEngateOtherShip(targer: Ship) -> Bool {
+        let dx = targer.position.x - position.x
+        let dy = targer.position.y - position.y
+        let targetDistance = sqrt(dx * dx + dy * dy)
+        return targetDistance <= firingRange
+    }
+}
+
+
+typealias Region = (Position) -> Bool
+
+
 
