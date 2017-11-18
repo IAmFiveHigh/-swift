@@ -38,8 +38,22 @@ extension Ship {
     }
 }
 
+extension Position {
+    var length: Double {
+        return sqrt(x * x + y * y)
+    }
+    
+    func minus(p: Position) -> Position {
+        return Position(x: x - p.x, y: y - p.y)
+    }
+}
 
 typealias Region = (Position) -> Bool
+
+func circle(radius: Distance) -> Region {
+    return { point in point.length <= radius}
+}
+
 
 
 
