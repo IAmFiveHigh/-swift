@@ -54,6 +54,15 @@ func circle(radius: Distance) -> Region {
     return { point in point.length <= radius}
 }
 
+func circle(radius: Distance, center: Position) -> Region {
+    return { point in point.minus(p: center).length <= radius }
+}
+
+func shift(region: @escaping Region, offSet: Position) -> Region {
+    return { point in region(point.minus(p: offSet)) }
+}
+
+
 
 
 
