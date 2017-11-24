@@ -4,18 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>函数式编程.xcscheme</key>
+		<key>封装CoreImage  摘录来自: Chris Eidhof. “函数式 Swift”。 iBooks..xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>35490BA81FBEED3C00AFAA8F</key>
+		<key>封装CoreImage.xcscheme</key>
 		<dict>
-			<key>primary</key>
-			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>

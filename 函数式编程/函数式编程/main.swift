@@ -62,6 +62,9 @@ func shift(region: @escaping Region, offSet: Position) -> Region {
     return { point in region(point.minus(p: offSet)) }
 }
 
+//上面都是船的问题
+
+
 
 
 
